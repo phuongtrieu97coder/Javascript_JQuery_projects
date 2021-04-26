@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+
+
+    <body>
+        
+        <input type="text" id="car_name" placeholder="Enter your car name">
+        <input type="text" id="car_brand" placeholder="Enter your car brand">
+        <input type="text" id="car_year" placeholder="Enter your car year">
+        <input type="submit" value="submit" onclick="car_function()">
+
+        <div id="result" style="color:darkcyan">
+
+        </div>
+        
+        <script>
+      
+                var car_function = () => {
+                let name1 = document.getElementById('car_name').value ;
+                let brand1 = document.getElementById('car_brand').value ;
+                let year1 = document.getElementById('car_year').value ;
+                var car_object = {name1,brand1,year1};
+                var text = "";
+                for(let i in car_object){
+                    text = ` <b> ${text} ${i} : ${car_object[i]}</b> <br>`;
+                }
+                document.getElementById('result').innerHTML =  "<b style='color:blue'> Your car collection: </b> <br>" + text;
+            }
+      
+        </script>
+    </body>
+
+
+    <footer>
+
+    </footer>
+
+
+
+
+</html>
+        
