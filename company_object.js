@@ -82,3 +82,36 @@ var silicon_valley_corp = (company_name_1,company_name_2) => {
 }
 console.log(silicon_valley_corp("Oracle","Netflix"));
 console.log(silicon_valley_corp("Tesla","Facebook").result());
+
+
+/* output
+
+[Running] node "c:\Users\terro\Project vs code 2017\test1.js"
+{
+  name2: 'Google',
+  employee2: '300000',
+  stock_price2: '2295',
+  revenue2: '182.5 billion USD'
+}
+{
+  name3: 'Microsoft',
+  employee2: '400000',
+  product3: {
+    prod_name3: [ 'laptop', 'tablet', 'computer', 'software' ],
+    type_of_product3: { software: [Array] }
+  },
+  revenue3: '143 billion USD'
+}
+{
+  sili_com_name1: 'Oracle',
+  sili_com_name2: 'Netflix',
+  result: [Function: result]
+}
+we have some company like Tesla and Facebook
+undefined
+
+[Done] exited with code=0 in 0.125 seconds
+
+
+
+*/
