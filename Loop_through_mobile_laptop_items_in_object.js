@@ -45,3 +45,26 @@ let function2 = () => {
 
 function1(mobile);
 function2();
+
+/* output 
+
+[Running] node "c:\Users\terro\Project vs code 2017\test1.js"
+This is Iphone 12 of Apple in 2022
+brand: Apple,Samsung,Google,Motorola
+model: Iphone 12,Galaxy s30,Google Pixel 5,moto g stylus
+year: 2022
+introduction: introduction (arg1){
+        console.log(`This is ${arg1} of ${this.brand[0]} in ${this.year}`);
+    }
+This is Surface Laptop4 of Microsoft in 2021
+brand2: Microsoft,HP,Acer,Apple,Dell
+model2: Surface Laptop4,HP SPECTRE X360 CONVERTIBLE LAPTOP - 15T-EB000 TOUCH,Acer Laptop Aspire  A51,MacBook Pro - Space Gray 13‑inch ,Alienware m15 Ryzen Edition R5
+year2: 2021
+introduction2: ()=> {
+        console.log(`This is ${model2[0]} of ${brand2[0]} in ${year2}`);
+    }
+
+[Done] exited with code=0 in 0.138 seconds
+
+
+*/
