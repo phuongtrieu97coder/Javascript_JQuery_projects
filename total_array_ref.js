@@ -71,7 +71,7 @@ for(const i = 0; i< arr6.length ; i++){
 }
 
 var text2 = "";
-for(let i2 = arr6.length-1; i2>=0; i2++){
+for(let i2 = arr6.length-1; i2>=0; i2--){
     text2 += `<b>${i2}:${arr6[i2]}</b><br>`;
     document.getElementById("block5").innerHTML = text2;
     console.log(text2);
