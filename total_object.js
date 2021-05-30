@@ -313,6 +313,24 @@ console.log(tree_name_obj.constructor);
 console.log(`tree_name_obj.constructor is ${tree_name_obj.constructor}`);
 
 
+
+//create an object through a function
+function obj16(obj16_prop1,obj16_prop2){
+    this.obj16_prop1 = obj16_prop1;
+    this.obj16_prop2 = obj16_prop2;
+   
+}
+obj16.prototype.obj16_prop3 = {
+    obj16_prop3_1: "val3_1",
+    obj16_prop3_2: ["val3_2_1","val3_2_2","val3_2_3"]
+}; 
+
+const obj16_object = new obj16("val1",["val2_1","val2_2","val2_3","val2_4"]);
+console.log(obj16_object);
+console.log(obj16_object.obj16_prop3);
+
+
+
 /*
 output
 
@@ -554,6 +572,18 @@ tree { tree_name: 'oak' }
 tree_name_obj.constructor is function tree(tree_name){
     this.tree_name = tree_name;
 }
+
+
+
+obj16 {
+  obj16_prop1: 'val1',
+  obj16_prop2: [ 'val2_1', 'val2_2', 'val2_3', 'val2_4' ]
+}
+{
+  obj16_prop3_1: 'val3_1',
+  obj16_prop3_2: [ 'val3_2_1', 'val3_2_2', 'val3_2_3' ]
+}
+
 
 [Done] exited with code=0 in 0.137 seconds
 
