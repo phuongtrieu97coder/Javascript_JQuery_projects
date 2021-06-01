@@ -169,6 +169,29 @@ Object.defineProperties(obj6,{
 console.log(obj6);
 
 
+//defineProperty with get and set value
+
+
+var obj1 = {counter: 0};
+Object.defineProperty(obj1,"sum",{
+    set : function (val) {this.counter += val;}
+});
+Object.defineProperty(obj1,"multiply",{
+    get : function () {return this.counter*=10;}
+})
+obj1.sum = 3;
+console.log(obj1.counter);
+//if you want to call the properties : sum or multiply that has get or set method
+// , you need to set the return keyword inside 
+// get or set method
+console.log(obj1.multiply);
+//output 
+// 3   
+// 30
+
+
+
+
 const get_prop_descriptor = Object.getOwnPropertyDescriptor(obj6,"prop4");
 console.log(get_prop_descriptor);
 console.log(get_prop_descriptor.enumerable);
