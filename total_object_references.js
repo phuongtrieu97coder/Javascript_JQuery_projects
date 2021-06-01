@@ -353,6 +353,17 @@ console.log(obj16_object);
 console.log(obj16_object.obj16_prop3);
 
 
+//a function can be invoked(started) automatically without being called  using self-invoke function
+(function(){
+    console.log("Hello" + obj16_object);
+})();
+
+
+(function(){
+    document.getElementByIdg("block1").innerHTML = "welcome " + obj16_object;
+})();
+
+
 
 /*
 output
