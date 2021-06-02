@@ -448,6 +448,81 @@ var person = {
    // output This is John Doe,he is a Web Developer and he earns $12000 every month 
 
 
+
+
+//apply(obj) method  
+
+ 
+ 
+
+var person = {  
+
+    fullName() {  
+      return this.firstName + " " + this.lastName;  
+    }  
+  }  
+
+ 
+ 
+
+  var person1 = {  
+  firstName:"John",  
+ lastName: "Doe"  
+  }  
+
+ 
+ var person2 = {  
+firstName:"Mary",  
+     
+lastName: "Doe"  
+ }  
+
+ 
+ 
+
+  console.log(person.fullName.apply(person1));   
+
+ 
+ 
+
+   // output "John Doe"  
+
+ 
+//apply(obj,[“arg1”,”arg2”,…]);  
+
+ 
+
+var person = {  
+
+fullName(jobtitle,salary) {  
+
+return "This is " +this.firstName +  
+
+" " + this.lastName+ ",he is a " + jobtitle +  
+ " and he earns " +salary+" every month";  
+
+ }  
+ }  
+
+var person1 = {  
+firstName:"John",  
+lastName: "Doe"  
+
+  }  
+
+ 
+ 
+var person2 = {  
+firstName:"Mary",  
+ lastName: "Doe"  
+}  
+
+console.log(person.fullName.apply(person1,["Web Developer","$12000"]));   
+
+ 
+ 
+
+   // output This is John Doe,he is a Web Developer and he earns $12000 every month 
 /*
 output
 
