@@ -89,6 +89,19 @@ console.log(obj1.intro8("val8_1","val8_2","val8_3"));
 console.log(obj1.intro9());
 
 
+
+//another way to make an object
+var obj1_2 = {
+    "prop1": "val1",
+    "prop2": "val2",
+    "prop3": "val3"
+}
+
+
+
+
+
+
 var obj2 = Object.create({});
 obj2.prop1 = "val1";
 obj2.prop2 = ["val2_1","val2_2","val2_3","val2_4"];
