@@ -2,6 +2,22 @@ var arr1 = ["el1","el2","el3","el4"];
 var arr2 = ["el1","el2","el3","el4"];
 var arr3 = ["el1","el2","el3","el4"];
 
+
+//array contain object
+Var array_obj =  [ 
+
+        {"number":"1","name":"john","jobtitle":"manager"}, 
+
+        {"number":"2","name":"gabriel","jobtitle":"marketer"}, 
+
+        {"number":"3","name":"adam","jobtitle":"accounter"} 
+
+         
+
+    ] 
+
+
+
 var arr_concat = arr1.concat(arr2,arr3);
 var arr_push = arr2.push("er");
 var $arr_pop = arr3.pop();
