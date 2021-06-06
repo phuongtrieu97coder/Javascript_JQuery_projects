@@ -59,6 +59,22 @@ var obj1 = {
     intro10(){
         console.log( this.prop1 +" is prop1");
         return "\n";
+    },
+   intro11(para1_11){
+        function sum(){
+            function subtract(){
+                function multiply(){
+                    function devide(){
+                        console.log(para1_11 - 2);
+                        return  "\n";
+                    }
+                    return devide() *100;
+                }
+                return multiply() - 50;
+            }
+            return subtract() + 300;
+        }
+        return `Calculate result is ${sum()} \n`;
     }
 }
 const {prop1,_prop2,prop3,prop4,$prop5,$prop6$,_prop7} = obj1;
@@ -93,7 +109,7 @@ console.log(obj1.intro8(100,80));
 console.log(obj1.intro8(60,80));
 console.log(obj1.intro9("intro9_val1","intro9_val2","intro9_val3"));
 console.log(obj1.intro10());
-
+console.log(obj1.intro11(193));
 
 /*
 
@@ -151,6 +167,9 @@ para1_7 is the greatest numeric value
 }
 val1 is prop1
 
+
+191
+Calculate result is 250 
 
 
 [Done] exited with code=0 in 0.139 seconds
