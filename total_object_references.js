@@ -94,7 +94,8 @@ console.log(obj1.intro9());
 var obj1_2 = {
     "prop1": "val1",
     "prop2": "val2",
-    "prop3": "val3"
+    "prop3": "val3",
+    $prop4: “val4”
 }
 
 
