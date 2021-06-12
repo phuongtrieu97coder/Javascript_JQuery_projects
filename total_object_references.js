@@ -534,7 +534,55 @@ firstName:"Mary",
 console.log(person.fullName.apply(person1,["Web Developer","$12000"]));   
 
  
+
+
+//create a class named: song  that has three properties: name1,type1,director and then make an object depend on this class 
+
  
+
+class song { 
+
+    constructor(name1,type1,director){ 
+
+        this.name1 = name1, 
+
+        this.type1 = type1, 
+
+        this.director = director 
+
+    } 
+
+ 
+ 
+
+}; 
+
+const song_obj = new song("I need you","Trance","Armin Van Buuren"); 
+
+console.log(song_obj); 
+
+/*output 
+
+song { 
+
+  name1: 'I need you', 
+
+  type1: 'Trance', 
+
+  director: 'Armin Van Buuren' 
+
+} 
+
+ */ 
+
+console.log(song_obj.name1); 
+
+//ouput   I need you 
+ 
+
+
+
+
 
    // output This is John Doe,he is a Web Developer and he earns $12000 every month 
 /*
