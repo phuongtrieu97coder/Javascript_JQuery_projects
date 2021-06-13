@@ -113,6 +113,8 @@ console.log(obj1.intro8(60,80));
 console.log(obj1.intro9("intro9_val1","intro9_val2","intro9_val3"));
 console.log(obj1.intro10());
 console.log(obj1.intro11(193));
+console.log(Object.getOwnPropertySymbols(obj1))
+
 
 /*
 
@@ -173,7 +175,7 @@ val1 is prop1
 
 191
 Calculate result is 250 
-
+[ Symbol($%#$T$%Y^%U&U&), Symbol(4554tu6756u76u76) ]
 
 [Done] exited with code=0 in 0.139 seconds
 
