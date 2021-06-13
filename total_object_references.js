@@ -63,7 +63,9 @@ var obj1 = {
     intro9(){
         console.log(`${this.prop2[2]} is an array property value of this obj`);
         return "\n";
-    }
+    },
+    [Symbol("$%#$T$%Y^%U&U&")]: "localSymbol",
+    [Symbol("4554tu6756u76u76")]: "globalSymbol"
 }
 
 const {prop1,prop2,_prop3,prop4} = obj1;
