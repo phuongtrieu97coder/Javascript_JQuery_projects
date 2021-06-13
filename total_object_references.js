@@ -89,7 +89,7 @@ console.log(obj1.intro7("code"));
 console.log(obj1.intro7("ja"));
 console.log(obj1.intro8("val8_1","val8_2","val8_3"));
 console.log(obj1.intro9());
-
+console.log(Object.getOwnPropertySymbols(obj1))
 
 
 //another way to make an object
