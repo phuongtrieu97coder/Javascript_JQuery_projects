@@ -114,6 +114,15 @@ console.log(obj1.intro9("intro9_val1","intro9_val2","intro9_val3"));
 console.log(obj1.intro10());
 console.log(obj1.intro11(193));
 console.log(Object.getOwnPropertySymbols(obj1))
+console.log(Object.getOwnPropertyNames(obj1));
+console.log(Object.getOwnPropertyDescriptors(obj1));
+console.log(Object.keys(obj1));
+console.log(Object.values(obj1));
+console.log(Object.getPrototypeOf(obj1));
+console.log(Object.isExtensible(obj1));
+console.log(Object.isFrozen(obj1));
+console.log(Object.isSealed(obj1));
+console.log(Object.constructor);
 
 
 /*
@@ -176,7 +185,188 @@ val1 is prop1
 191
 Calculate result is 250 
 [ Symbol($%#$T$%Y^%U&U&), Symbol(4554tu6756u76u76) ]
-
+[
+  'prop1',   '_prop2', 'prop3',
+  'prop4',   '$prop5', '$prop6$',
+  '_prop7',  'prop2',  'intro1',
+  'intro2',  'intro3', 'intro4',
+  'intro5',  'intro6', 'intro7',
+  'intro8',  'intro9', 'intro10',
+  'intro11'
+]
+{
+  prop1: {
+    value: 'val1',
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  _prop2: {
+    value: 'val2_0',
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  prop3: {
+    value: 'val3',
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  prop4: {
+    value: [ 'val4_1', 'val4_2', 'val4_3' ],
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  '$prop5': {
+    value: 'val5',
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  '$prop6$': {
+    value: [ 'val6_1', [Object], 52, [Array], [Object] ],
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  _prop7: {
+    value: { prop7_1: 'val7_1', prop7_2: 'val7_2', '$prop7_3': [Array] },
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  prop2: {
+    get: [Function: get prop2],
+    set: [Function: set prop2],
+    enumerable: true,
+    configurable: true
+  },
+  intro1: {
+    get: [Function: get intro1],
+    set: undefined,
+    enumerable: true,
+    configurable: true
+  },
+  intro2: {
+    value: [Function: intro2],
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  intro3: {
+    value: [Function: intro3],
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  intro4: {
+    value: [Function: intro4],
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  intro5: {
+    value: [Function: intro5],
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  intro6: {
+    value: [Function: intro6],
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  intro7: {
+    value: [Function: intro7],
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  intro8: {
+    value: [Function: intro8],
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  intro9: {
+    value: [Function: intro9],
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  intro10: {
+    value: [Function: intro10],
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  intro11: {
+    value: [Function: intro11],
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  [Symbol($%#$T$%Y^%U&U&)]: {
+    value: 'localSymbol',
+    writable: true,
+    enumerable: true,
+    configurable: true
+  },
+  [Symbol(4554tu6756u76u76)]: {
+    value: 'globalSymbol',
+    writable: true,
+    enumerable: true,
+    configurable: true
+  }
+}
+[
+  'prop1',   '_prop2', 'prop3',
+  'prop4',   '$prop5', '$prop6$',
+  '_prop7',  'prop2',  'intro1',
+  'intro2',  'intro3', 'intro4',
+  'intro5',  'intro6', 'intro7',
+  'intro8',  'intro9', 'intro10',
+  'intro11'
+]
+[
+  'val1',
+  'val2_0',
+  'val3',
+  [ 'val4_1', 'val4_2', 'val4_3' ],
+  'val5',
+  [
+    'val6_1',
+    { val6_2_prop1: [Array] },
+    52,
+    [ 'val6_3', 'val6_4', 'val6_5', 'val6_6' ],
+    { val6_4: [Object] }
+  ],
+  {
+    prop7_1: 'val7_1',
+    prop7_2: 'val7_2',
+    '$prop7_3': [ 'val7_3_1', 'val7_3_2', [Object] ]
+  },
+  'val2_0',
+  'hello',
+  [Function: intro2],
+  [Function: intro3],
+  [Function: intro4],
+  [Function: intro5],
+  [Function: intro6],
+  [Function: intro7],
+  [Function: intro8],
+  [Function: intro9],
+  [Function: intro10],
+  [Function: intro11]
+]
+[Object: null prototype] {}
+true
+false
+false
+[Function: Function]
 [Done] exited with code=0 in 0.139 seconds
 
 */
