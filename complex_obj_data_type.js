@@ -75,7 +75,10 @@ var obj1 = {
             return subtract() + 300;
         }
         return `Calculate result is ${sum()} \n`;
-    }
+    },
+
+    [Symbol("$%#$T$%Y^%U&U&")]: "localSymbol",
+    [Symbol("4554tu6756u76u76")]: "globalSymbol"
 }
 const {prop1,_prop2,prop3,prop4,$prop5,$prop6$,_prop7} = obj1;
 console.log(prop1);
