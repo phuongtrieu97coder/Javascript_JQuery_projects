@@ -593,6 +593,16 @@ console.log(song_obj.name1);
 
 
 
+//create object through JSON string format contain object literal
+var JSON_obj4 = '{"prop1":"val1","_prop2":["val2_1","val2_2"],"$prop2_3":{"prop2_3_1":"val2_3_1"}}';
+const obj4 = JSON.parse(JSON_obj4);
+console.log(obj4);
+console.log(obj4.$prop2_3);
+console.log(obj4["_prop2"][0]);
+
+
+
+
 
 
    // output This is John Doe,he is a Web Developer and he earns $12000 every month 
