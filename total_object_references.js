@@ -90,6 +90,15 @@ console.log(obj1.intro7("ja"));
 console.log(obj1.intro8("val8_1","val8_2","val8_3"));
 console.log(obj1.intro9());
 console.log(Object.getOwnPropertySymbols(obj1))
+console.log(Object.getOwnPropertyNames(obj1));
+console.log(Object.getOwnPropertyDescriptors(obj1));
+console.log(Object.keys(obj1));
+console.log(Object.values(obj1));
+console.log(Object.getPrototypeOf(obj1));
+console.log(Object.isExtensible(obj1));
+console.log(Object.isFrozen(obj1));
+console.log(Object.isSealed(obj1));
+console.log(Object.constructor);
 
 
 //another way to make an object
