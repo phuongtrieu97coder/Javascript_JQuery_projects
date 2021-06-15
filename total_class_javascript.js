@@ -429,6 +429,46 @@ document.getElementById("block1").innerHTML = car_price_obj.introduction()+"<br>
 
  
 
+
+
+//using call and apply
+
+
+class business_branch{ 
+     constructor(branch,product,profit){
+         this.branch = branch;
+         this._product = product;
+         this.$profit = profit;
+     }
+     intro1(){
+         return `We are here to present you some product like ${this._product[0]} of ${this.branch}.\n
+         This company gets ${this.$profit} in profit every year`;
+     }
+     
+     
+}
+const business_branch_obj = new business_branch(
+    "Sony",
+    ["TV","Refrigerator","smartphone","Laptop","Air Conditioner","DVD Player"],
+    "$100000000"
+);
+
+
+
+let business_branch_obj2 = {
+    branch: "Samsung",
+    _product: ["Smartphone","Tablet","Laptop","TV"],
+    $profit: "$20000000"
+}
+
+console.log(business_branch_obj.intro1.call(business_branch_obj2));
+/*output
+We are here to present you some product like Smartphone of Samsung.
+
+         This company gets $20000000 in profit every year
+
+*/
+
  
 
 
