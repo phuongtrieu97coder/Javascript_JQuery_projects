@@ -1,7 +1,8 @@
 This program wrote by PHP,JSON,HTML,JAVASCRIPT,XAMPP SERVER SIDE SOFTWARE
 This program is use to practice  class javascript, object, switch, object method, set, get, class inheritance, date, array, JSON , get data from web server, php , html, for loop, 
 call, apply of  object , JSONP an so on
-This program is work on php file, not html file which mean you have to work on the web server and server side languages
+This program is work on php file, not html file which means you have to work on the webserver and server-side languages
+This program gets data from two file like test1.php   and    car_dealership_price.json
 Please observer the output result according to some photo attached to this folder
 It took me 3 hour to write this program 
 Notice that this program is not for beginner in Javascript or PHP
