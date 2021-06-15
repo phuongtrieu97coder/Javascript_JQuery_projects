@@ -1,0 +1,113 @@
+{
+    "Branch":["Honda","Audi","BMW","Toyota"],
+  
+    "$Car_name":{
+      
+        "Honda":["Honda accord","Honda CR-V"],
+      
+        "Audi" : ["Audi-Q5","Audi e-tron"],
+      
+        "BMW" : ["BMW M3","BMW I-8"],
+      
+        "Toyota" : ["Toyota Corolla","Toyota Venza"]
+      
+    },
+  
+    "_Car_year": {
+      
+        "Honda":[
+            {
+                "Honda_accord":2021
+            },
+            {
+                "Honda_CR_V":2021
+            }
+        ],
+      
+        "Audi" : [
+            {
+                "Audi_Q5":2019
+            },
+            {
+                "Audi_e_tron":2018
+            }
+        ],
+      
+        "BMW" : [
+            {
+                "BMW_M3":2020
+            },
+            {
+                "BMW_I_8":2021
+            }
+        ],
+      
+        "Toyota" : [
+            {
+                "Toyota_Corolla":2020
+            },
+            {
+                "Toyota_Venza":2019
+            }
+        ]
+    },
+  
+    "$Car_price$":{
+        "Honda":[
+            {
+                "Honda_accord":{
+                    "year":2021,
+                    "price": "$30000"
+                }
+            },
+            {
+                "Honda_CR_V":{
+                    "year":2021,
+                    "price": "$28000"
+                }
+            }
+        ],
+        "Audi" : [
+            {
+                "Audi_Q5":{
+                    "year":2019,
+                    "price": "$64000"
+                }
+            },
+            {
+                "Audi_e_tron":{
+                    "year":2018,
+                    "price": "$60000"
+                }
+            }
+        ],
+        "BMW" : [
+            {
+                "BMW_M3":{
+                    "year":2020,
+                    "price": "$50000"
+                }
+            },
+            {
+                "BMW_I_8":{
+                    "year":2021,
+                    "price": "$24000"
+                }
+            }
+        ],
+        "Toyota" : [
+            {
+                "Toyota_Corolla":{
+                    "year":2020,
+                    "price": "$16000"
+                }
+            },
+            {
+                "Toyota_Venza":{
+                    "year":2019,
+                    "price": "$13000"
+                }
+            }
+        ]
+    }
+}
