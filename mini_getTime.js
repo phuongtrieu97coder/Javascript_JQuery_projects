@@ -39,3 +39,28 @@ setInterval(time_func,1000);
 
 
 //output ex: 22:08:7:PM
+
+
+
+
+setInterval(func1,1000);
+        function func1(){
+             var d = new Date(),hour = d.getHours(),minute = d.getMinutes(),second = d.getSeconds();
+             if(hour>12&&minute<10&&second<10){
+                  document.getElementById("block1").innerHTML = hour+":"+"0"+minute+":"+"0"+second+":"+"PM";
+             }else if(hour>12&&minute>10&&second>10){
+               document.getElementById("block1").innerHTML = hour+":"+minute+":"+second+":"+"PM";
+             }else if(hour>12&&minute>10&&second<10){
+               document.getElementById("block1").innerHTML = hour+":"+minute+":"+"0"+second+":"+"PM";
+             }else if(hour<12&&minute<10&&second<10){
+               document.getElementById("block1").innerHTML = "0"+hour+":"+"0"+minute+":"+"0"+second+":"+"AM";
+             }else if(hour<12&&minute<10&&second>10){
+               document.getElementById("block1").innerHTML = "0"+hour+":"+"0"+minute+":"+second+":"+"AM";
+             }else if(hour<12&&minute>10&&second<10){
+               document.getElementById("block1").innerHTML = "0"+hour+":"+minute+":"+"0"+second+":"+"AM";
+             }else if(hour<12&&minute>10&&second>10){
+               document.getElementById("block1").innerHTML = "0"+hour+":"+minute+":"+second+":"+"AM";
+             } else {
+                  return "Time";
+             }
+        }
