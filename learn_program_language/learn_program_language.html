@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+         <style>
+               .slideshow_img{display:none;}
+               .slideshow_img2{display:none;}
+               .slideshow_img3{display:none;}
+               .slideshow_img4{display:none;}
+               
+         </style>
+    </head>
+
+
+    <body style="background-color: rgb(236, 237, 238);">
+        <div id="block1" class=" w3-display-container">
+                <img class="slideshow_img" src="logo1.jpg" width="100%" height="300px">
+                <img class="slideshow_img" src="logo4.jpg" width="100%" height="300px">
+                <img class="slideshow_img" src="logo6.jpg" width="100%" height="300px">
+                <b class="w3-xxlarge w3-text-white w3-display-middle">WELCOME TO THIS WEBSITE</b>
+        </div>
+        <script>
+            var slide_index = 0;
+            slideshow_func();
+
+            function  slideshow_func(){
+              var x = document.getElementsByClassName("slideshow_img");
+              var i ;
+              for(i=0;i<x.length;i++){
+                x[i].style.display="none";
+              }
+              slide_index++;
+              if(slide_index>x.length){slide_index=1};
+              x[slide_index-1].style.display="block";
+              setTimeout(slideshow_func,2000);
+            }
+        </script>
+         
+        <div id="block2" class="w3-nav w3-black w3-top">
+                <button class="w3-button w3-hover-aqua w3-ripple">HOME</button>
+                <button class="w3-button w3-hover-aqua w3-ripple">MENU</button>
+                <button class="w3-button w3-hover-aqua w3-ripple">LINK</button>
+                <button class="w3-button w3-hover-aqua w3-ripple">ABOUT</button>
+                <button class="w3-button w3-hover-aqua w3-ripple">CONTACT</button>
+        </div>
+
+
+        <div id="block3" class="w3-nav w3-black w3-bottom">
+          <span class="w3-right">
+            <button class="w3-button w3-hover-aqua w3-ripple">CONTACT</button>
+            <b>|</b>
+            <button class="w3-button w3-hover-aqua w3-ripple">ABOUT</button>
+            <b>|</b>
+            <button class="w3-button w3-hover-aqua w3-ripple">POLICY</button>
+            <b>|</b>
+            <button class="w3-button w3-hover-aqua w3-ripple">COPYRIGHT</button>
+            <b>|</b>
+            <button class="w3-button w3-hover-aqua w3-ripple">TERM OF USE</button>
+            <b>|</b>
+          </span>
+          
+        </div>
+
+
+        <div id="block4" class="w3-bar-block w3-black  w3-left" style="height:800px">
+              <button class="w3-button w3-hover-blue w3-large w3-bar-item w3-ripple">PROGRAMMING LANGUAGE</button>
+              <button class="w3-button w3-hover-blue w3-large w3-bar-item w3-ripple">BOOK</button>
+              <button class="w3-button w3-hover-blue w3-large w3-bar-item w3-ripple">WEBSITE</button>
+              <button class="w3-button w3-hover-blue w3-large w3-bar-item w3-ripple">PROJECT</button>
+              <button class="w3-button w3-hover-blue w3-large w3-bar-item w3-ripple">TOOLS</button>
+        </div>
+
+
+
+        <div id="block5" class="w3-bar-block w3-gray  w3-right" style="height:800px;width:200px">
+            <span class="w3-bar-item">
+                  <img class="slideshow_img2" src="html_logo.png" style="width:200px">
+                  <img class="slideshow_img2" src="js_logo.png" style="width:200px">
+            </span>
+            <span class="w3-bar-item">
+              <img class="slideshow_img3" src="php_logo.png" style="width:200px">
+              <img class="slideshow_img3" src="w3_css_logo.jpg" style="width:200px">
+            </span>
+            <span class="w3-bar-item">
+              <img class="slideshow_img4" src="css3_logo.png" style="width:200px">
+              <img class="slideshow_img4" src="bootstrap_logo.png" style="width:200px">
+            </span>
+            
+           
+        </div>
+        <script>
+             var slide_index2 = 0;
+             slideshow_func2();
+
+             function slideshow_func2(){
+               var x2 = document.getElementsByClassName("slideshow_img2");
+               var i2;
+               for(i2=0;i2<x2.length;i2++){
+                 x2[i2].style.display="none";
+               }
+               slide_index2++;
+               if(slide_index2>x2.length){slide_index2=1};
+               x2[slide_index2-1].style.display="block";
+               setTimeout(slideshow_func2,2000);
+             }
+
+
+             var slide_index3 = 0;
+             slideshow_func3();
+
+             function slideshow_func3(){
+               var x3 = document.getElementsByClassName("slideshow_img3");
+               var i3;
+               for(i3=0;i3<x3.length;i3++){
+                 x3[i3].style.display="none";
+               }
+               slide_index3++;
+               if(slide_index3>x3.length){slide_index3=1};
+               x3[slide_index3-1].style.display="block";
+               setTimeout(slideshow_func3,2000);
+             }
+
+
+             var slide_index4 = 0;
+             slideshow_func4();
+
+             function slideshow_func4(){
+               var x4 = document.getElementsByClassName("slideshow_img4");
+               var i4;
+               for(i4=0;i4<x4.length;i4++){
+                 x4[i4].style.display="none";
+               }
+               slide_index4++;
+               if(slide_index4>x4.length){slide_index4=1};
+               x4[slide_index4-1].style.display="block";
+               setTimeout(slideshow_func4,2000);
+             }
+        </script>
+
+
+        <div id="block6" class="w3-grid">
+                 <div class="w3-quarter" style="margin-left:50px">
+
+
+                      <span class="w3-display-container w3-container">
+                           <img src="html_logo.png"  class="w3-border w3-hover-shadow" width="100%" height="200px">
+                           <b class="w3-display-middle w3-xlarge" style="margin-left:180px">LEARN HTML</b>
+                           <b style="margin-left:50px;color:red;padding:20px">HTML is a language for web develop and known as front-end developing tool</b>
+                      </span>
+
+
+                      <span class=" w3-display-container w3-container">
+                        <img src="css3_logo.png" class="w3-border  w3-hover-shadow" width="100%" height="200px">
+                        <b class="w3-display-middle w3-xlarge" style="margin-left:180px">LEARN CSS3</b>
+                           <b style="margin-left:50px;color:rgb(60, 128, 216);padding:20px">CSS3 is a language for web develop and known as front-end developing tool</b>
+                      </span>
+
+
+                      <span class="w3-display-container w3-container">
+                        <img src="bootstrap_logo.png"  class="w3-border  w3-hover-shadow" width="100%" height="200px">
+                        <b class="w3-display-middle w3-xlarge w3-text-orange" style="margin-left:180px">LEARN BOOTSTRAP</b>
+                        <b style="margin-left:50px;color:rgb(118, 10, 128);padding:20px">BOOSTRAP is a language for web develop and known as front-end developing tool</b>
+                 
+                      </span>
+
+
+                      <span class="w3-display-container w3-container">
+                        <img src="w3_css_logo.jpg" class="w3-border  w3-hover-shadow" width="100%" height="200px">
+                        <b class="w3-display-middle w3-xlarge" style="margin-left:180px">LEARN W3.CSS</b>
+                           <b style="margin-left:50px;color:rgb(50, 235, 121);padding:20px">W3.CSS is a language for web develop and known as front-end developing tool</b>
+                    
+                      </span>
+
+
+                 </div>
+
+                 <div class="w3-third " style="margin-left:60px">
+
+
+                      <span class="w3-display-container w3-container">
+                            <img src="js_logo.png" class="w3-border  w3-hover-shadow" width="100%">
+                            <b class="w3-display-middle w3-xlarge" style="margin-left:180px">LEARN JAVASCRIPT</b>
+                           <b style="margin-left:50px;color:rgb(159, 184, 71);padding:20px">JAVASCRIPT is a language for web develop and known as back-end developing tool</b>
+                    
+                      </span>
+
+
+                      <span class="w3-display-container w3-container">
+                            <img src="php_logo.png" class="w3-border  w3-hover-shadow" width="100%">
+                            <b class="w3-display-middle w3-xlarge" style="margin-left:180px">LEARN PHP</b>
+                           <b style="margin-left:50px;color:rgb(96, 155, 231);padding:20px">PHP is a language for web develop and known as back-end developing tool</b>
+                    
+                      </span>
+                 </div>
+        </div>
+
+
+        <div id="block7"></div> 
+        <div id="block8"></div>
+        <div id="block9"></div>
+        <div id="block10"></div>
+  
+       
+      
+
+      <script>
+        
+      </script>
+
+      
+    </body>
+
+
+   
+
+
+    <footer>
+
+    </footer>
+
+
+
+
+</html>
+        
