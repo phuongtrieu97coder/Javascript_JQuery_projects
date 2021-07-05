@@ -1,0 +1,7 @@
+{
+    "_exercise_name_1_3":["leg press machine","leg extension machine","leg curl machine"],
+    "$muscle_working_1_3$":{
+         "leg_press_machine":["leg","thigh","calf","hamstring"],
+         "$leg_extension_machine":["leg","thigh","calf","hamstring"]
+    }
+}
