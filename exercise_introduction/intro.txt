@@ -1,0 +1,6 @@
+This project made from some programming languages like: javascript,html,php
+This project gets data from json,php,html
+this project uses for practise js async,promise,await,object,json,JSONP,class,function,class/object method,switch,date
+Some block gets data from another website or file using async await with ajax or  jsonp
+syntax begins with js promise or js async and inside them  contains class,child class, function, switch, xmlhttprequest,object,array,string,child_object,child_promise,jsonp
+This is not a project for beginner
