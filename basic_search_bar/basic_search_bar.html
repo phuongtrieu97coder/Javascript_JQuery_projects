@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+
+      <head>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+        <style>
+            table tr td {
+                border: 2px solid green;
+            }
+        </style>
+
+      </head>
+
+
+
+
+
+
+      <body>
+
+           
+           
+
+          <input type="text" placeholder="Search...." id="search_input">
+          <button onclick="search_result()"><i class="fa fa-search"></i></button>
+
+           <script>
+              var cartoon_arr = [
+                  "PINK PANTHER",
+                  "OGGY AND THE COCKROACHES",
+                    "CONAN",
+                    "DORAEMON"
+              ];
+              function search_func(){
+                  var x = document.getElementById("search_input").value;
+                  if(x.toUpperCase()== cartoon_arr[0]){
+                      return `<a style='font-size:30px;color:pink' href="https://www.youtube.com/results?search_query=pink+panther">${cartoon_arr[0]}</a><br>`;
+                  } else if(x.toUpperCase()== cartoon_arr[1]){
+                      return `<a style='font-size:30px;color:green' href="https://www.youtube.com/results?search_query=oggy+and+the+cockroaches">${cartoon_arr[1]}</a><br>`
+                  
+                  } else if(x.toUpperCase()== cartoon_arr[2]){
+                      return `<a style='font-size:30px;color:aqua' href="https://www.youtube.com/results?search_query=detective+conan">${cartoon_arr[2]}</a><br>`
+                  
+                  } else if(x.toUpperCase()== cartoon_arr[3]){
+                      return `<a style='font-size:30px;color:blue' href="https://www.youtube.com/results?search_query=doraemon">${cartoon_arr[3]}</a><br>`
+                  } else {
+                      return "Error";
+                  }
+              }
+
+
+              function search_result(){
+                  document.getElementById("block1").innerHTML = search_func();
+              }
+            
+           </script>
+
+
+        <div id="block1">
+                        
+        </div>
+
+      </body>
+
+
+
+
+
+
+
+
+      <footer>
+
+
+      </footer>
+
+
+
+
+
+
+
+
+</html>
