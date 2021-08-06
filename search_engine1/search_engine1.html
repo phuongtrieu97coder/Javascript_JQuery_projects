@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+
+
+   <meta charset="UTF-8">
+
+
+
+   <meta name="keywords"  content="HTML,CSS,JAVASCRIPT,BOOTSTRAP,W3CSS">
+
+
+
+   <meta name="description"  content="THIS IS PHUONG WEBSITE">
+
+
+
+   <meta name="author"    content="PHUONG.TRIEU">
+
+
+
+   <meta name="viewport"   content="width=device-width,  initial-scale=1.0">
+
+
+
+
+   <title>PHUONG WEBSITE</title>
+
+
+
+   <link rel="shortcut icon"   href="image/html_logo.png"  type="image/png">
+
+
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+
+
+   <style>
+      #block1{
+         background:rgb(114, 134, 170) url("image/html_logo.png") no-repeat fixed top right;
+         height:300px;
+         border:3px solid purple;
+         border-radius:20px 30px;
+         outline:3px solid green;
+         outline-offset:20px;
+         padding:20px;
+         margin:40px;
+      }
+      #search_input{
+         width:500px;
+         height:50px;
+         font-size:30px;
+         color:white;
+      }
+
+
+
+
+      #search_button{
+         background-color:black;
+             font-size:30px;
+             padding:10px;
+             color:greenyellow;
+             cursor:pointer;
+      }
+      #search_button:hover{
+         background-color:greenyellow;
+         color:white;
+      }
+      #search_button:active{
+         background-color:red;
+         color:white;
+      }
+
+
+
+
+      #search_input:focus{
+         background-color:burlywood;
+      }
+       #block1 #google_button{
+             background-color:black;
+             font-size:30px;
+             padding:10px;
+             cursor:pointer;
+        }
+       #block1 #google_button:hover{
+             background-color:red;
+            
+             font-size:30px;
+             padding:10px;
+        }
+
+        #block1  #google_button a:visited{
+           color:red;
+        }
+        #block1  #google_button a:hover{
+         color:white;
+        }
+
+        #block1  #google_button:active,
+        #block1  #google_button a:active{
+           background-color:chartreuse;
+           color:orange;
+        }
+
+
+        #block1_1,#table1{
+           display:inline-block;
+        }
+
+        #table1,tr,td{
+           border:2px solid greenyellow;
+           color:white;
+           font-size:20px;
+           border-collapse:collapse;
+           
+        }
+
+        #table1 tr td{
+           padding:10px;
+           width:auto;
+        }
+
+        #block1_1{
+           position:absolute;
+           top:60px;
+        }
+        #table1{
+           position:relative;
+           left:650px;
+        }
+
+
+        #bottom_nav1{
+         width:100%;
+         position:fixed;
+         bottom:0;
+         left:0;
+         right:0;
+         background-color:black;
+         color:white;
+         font-size:20px;
+         
+        }
+
+        #bottom_nav1 button{
+           background-color:black;
+           color:white;
+           border:none;
+           padding:10px;
+           cursor:pointer;
+        }
+        #bottom_nav1 button:hover{
+           background-color:aqua;
+           color:white;
+        }
+        #bottom_nav1 button:active{
+         background-color:red;
+           color:white;
+           
+        }
+
+
+        #html_intro_paragraph_block{
+           display:none;
+           position:relative;
+           top:-80px;
+           background-color:black;
+           color:white;
+           font-size:20px;
+           overflow-x:hidden;
+           overflow-y:scroll;
+           width:600px;
+           height:150px;
+           text-indent:20px;
+           text-align:center;
+           vertical-align:baseline;
+           text-decoration:underline;
+           line-height:40px;
+           letter-spacing:3px;
+           text-shadow:4px 3px 3px yellowgreen;
+           text-transform:capitalize;
+           
+        }
+       
+   </style>
+
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+  <main>
+
+
+
+   <div id="block1">
+      
+
+      <div id="block1_1">
+
+
+               <input id="search_input" type="text" placeholder="Search....">
+               <button id="search_button" type="submit" onclick="search_func()"><i class="fa fa-search"></i></button>
+
+               <button id="google_button">
+                  <a href="https://www.google.com/">
+                     <i class="fa fa-google"></i>
+                  </a>
+               </button>
+
+
+            <br>
+
+
+            <label>SEARCHING TYPE:</label><br>
+
+
+
+            <input id="checkbox_input" type="checkbox" value="check"><label>TEXT</label>
+
+
+
+            <input id="radio_input" type="radio"><label>NUMBER</label>
+
+      </div>
+
+
+
+      <table id="table1">
+          <tr>
+             <td>Number</td>
+             <td>SEARCH</td>
+             <td>Result Number</td>
+          </tr>
+          <tr>
+             <td>01</td>
+             <td>HTML BUTTON</td>
+             <td>1000000000</td>
+          </tr>
+          <tr>
+             <td>02</td>
+             <td>HTML INPUT</td>
+             <td>26292252200000</td>
+          </tr>
+          <tr>
+             <td>03</td>
+             <td>HTML TABLE</td>
+             <td>7525386867257252755252</td>
+          </tr>
+          <tr>
+             <td>04</td>
+             <td>HTML</td>
+             <td style="overflow:auto;">89678966787676752538686</td>
+          </tr>
+      </table>
+
+
+
+       <div id="html_intro_paragraph_block">
+         HTML is the standard markup language for Web pages.<br>
+
+         With HTML you can create your own Website.<br>
+         
+         HTML is easy to learn <br>
+
+         HTML stands for Hyper Text Markup Language  <br>
+HTML is the standard markup language for creating Web pages  <br>
+HTML describes the structure of a Web page  <br>
+HTML consists of a series of elements   <br>
+HTML elements tell the browser how to display the content   <br>
+HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.<br>
+
+
+The &lt;!DOCTYPE html&gt; declaration defines that this document is an HTML5 document  <br>
+The &lt;html&gt; element is the root element of an HTML page  <br>
+The &lt;head&gt; element contains meta information about the HTML page  <br>
+The &lt;title&gt; element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)  <br>
+The &lt;body&gt; element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc. <br>
+The &lt;h1&gt; element defines a large heading  <br>
+The &lt;p&gt; element defines a paragraph  <br>
+
+
+       </div>
+
+
+
+    
+   </div>
+
+
+
+
+   <script>
+      function  search_func(){
+         var x = document.getElementById("search_input").value;
+         var y = document.getElementById("checkbox_input").checked;
+         if(x.toUpperCase() == "HTML" && y == true){
+            document.getElementById("html_intro_paragraph_block").style.display="block";
+         }
+      }
+   </script>
+
+
+
+   <nav id="bottom_nav1">
+      <span style="float:right;">
+         <button>ABOUT</button>
+         <b>|</b>
+         <button>PRIVACY&SECURITY</button>
+         <b>|</b>
+         <button>TERM OF USE</button>
+         <b>|</b>
+         <button>COPYRIGHT</button>
+         <b>|</b>
+         <button>CONTACT</button>
+         <b>|</b>
+         <button>CAREER | JOBS</button>
+         <b>|</b>
+         <button>ADVERTISE</button>
+         <b>|</b>
+         <button>HELP</button>
+         <b>|</b>
+         <button>FAQS</button>
+         <b>|</b>
+         <button>SITE MAP</button>
+         <b>|</b>
+      </span>
+   </nav>
+
+
+
+
+
+
+  </main>
+  
+
+</body>
+
+
+
+
+
+
+
+<footer>
+
+</footer>
+
+
+
+
+</html>
