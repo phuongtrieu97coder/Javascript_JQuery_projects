@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+       <head>
+              <meta charset="UTF-8">
+
+
+              <meta name="keywords"  content="HTML,CSS,JAVASCRIPT,BOOSTRAP,W3CSS,
+              SASS,JQUERY,ANGULAR JS, REACT JS, PHP, MYSQL, NODE.JS, ASP.NET">
+
+
+              <meta name="description"   content="THIS IS TEMPLATE FASHION BLOG">
+
+
+              <meta name="author"   content="PHUONG.TRIEU">
+
+
+
+              <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+
+
+
+
+              <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+       
+              <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+
+
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              
+              
+              <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+              
+
+
+
+
+
+              <link rel="shortcut icon" href="image/html_logo.png" type="image/x-icon">
+
+
+              <title>PHUONG WEBSITE</title>
+
+
+
+              <link rel="stylesheet"  type="text/css" href="test1.css">
+
+
+
+
+              <style>
+
+
+              </style>
+       </head>
+
+
+
+
+       <body>
+
+    
+          <header>
+            
+          
+
+
+          </header>
+
+
+      
+        
+       
+
+
+
+           
+            
+          <main>
+        
+           <div id="block1">
+                  <img title>
+                  <img title>
+           </div>
+
+
+           <ol id="block2" type="A">
+                  <li>Car1</li>
+                  <li>Car2</li>
+                  <li>Car3</li>
+           </ol>
+
+           
+            <button id="add_butt" type="button" name="add_butt" title="add button"
+            class="btn btn-info text-white w3-hover-blue" onclick="add_func()">Add Element</button>
+
+            <button id="remove_butt" type="button" name="remove_butt" title="remove button"
+            class="btn btn-secondary text-white w3-hover-blue" onclick="remove_func()">Remove Element</button>
+
+            <button id="replace_butt" type="button" name="replace_butt" title="replace button"
+            class="btn btn-warning text-white w3-hover-blue" onclick="replace_func()">Replace Img2</button>
+
+        <script>
+      var s = document.getElementsByTagName("img")[0];
+      var s2 = document.getElementsByTagName("img")[1];
+      var w = document.getElementById("block1");
+      var w2 = document.getElementById("block2");
+      var d = document.getElementsByTagName("li")[0];
+
+      s.setAttribute("src","image/car/mclarenspeedtail.jpg");
+      s.setAttribute("alt","car1");
+      s.style.width = "300px";
+      s.style.height = "300px";
+
+      console.log(s.hasAttributes());
+      var txt = "";
+      if(s.hasAttributes("title")){
+             s.removeAttribute("title");
+             
+      };
+      console.log(s.attributes[0].name);
+      console.log(s.attributes[0].value);
+      console.log(s.getAttribute("src"));
+      console.log("\n \n");
+
+      if(s.hasAttributes()){
+             for(let i = 0 ; i<s.attributes.length; i++){
+                    txt += s.attributes[i].name + "='" + s.attributes[i].value + "' \n";
+             }
+             console.log(txt);
+      }
+
+      s2.setAttribute("src","image/car/lamborghini_veneno.jpg");
+      s2.setAttribute("alt","car2");
+      s2.style.width = "300px";
+      s2.style.height = "300px";
+
+
+      console.log(s2.hasAttributes());
+      var txt2 = "";
+      if(s2.hasAttributes("title")){
+             s2.removeAttribute("title");
+             
+      };
+      console.log(s2.attributes[0].name);
+      console.log(s2.attributes[0].value);
+      console.log(s2.getAttribute("src"));
+      console.log("\n \n");
+
+      if(s2.hasAttributes()){
+             for(let i2 = 0 ; i2<s2.attributes.length; i2++){
+                    txt2 += s2.attributes[i2].name + "='" + s2.attributes[i2].value + "' \n";
+             }
+             console.log(txt2);
+      }
+
+
+      function add_func(){
+             var w_child = document.createElement("img");
+             w_child.src= "image/car/bugatti_chiron_pur_sport.jpg";
+             w_child.style.width = "300px";
+             w_child.style.height = "300px";
+             w.appendChild(w_child);
+      }
+
+      function remove_func(){
+             while(w2.hasChildNodes()){
+                    w2.removeChild(w2.childNodes[0]);
+             }
+      }
+
+
+      function replace_func(){
+             s2.replaceChild(s2.src='image/car/chervolet1.png',s2.src);
+      }
+
+                 
+        </script>
+         
+        
+
+        
+
+
+       
+         
+          
+          
+<!--
+ 
+
+
+
+
+
+
+
+  
+-->
+
+          
+          
+
+
+          
+
+
+
+
+           
+
+
+           
+
+
+           
+            
+           
+          
+          </main> 
+
+           
+          
+
+
+
+        
+          
+
+
+
+        <!--
+
+        
+       
+       
+       --> 
+
+           
+       
+       
+       </body>
+
+
+
+
+
+       <footer>
+
+       </footer>
+
+
+
+</html>
