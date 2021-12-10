@@ -1,0 +1,69 @@
+  <main>
+        
+
+          
+
+           <h1 id="block1"> </h1>
+
+           <div id="block2"></div>
+
+
+
+           <script>
+            var s = document.getElementById("block1");
+            var s2 = document.getElementById("block2");
+
+             window.addEventListener("mousedown",func1);
+             window.addEventListener("keydown",func1);
+             function func1(){
+                    var k = event.key;
+                    var k2 = event.keyCode || event.charCode || event.which;
+                    var alt = event.altKey;
+                    var ctrl = event.ctrlKey;
+                    var shift = event.shiftKey;
+                    var meta = event.metaKey;
+                    
+                    s.innerHTML = `Key: ${k}, Key code: ${k2} <br>`;
+
+                    if(k2 == 70){
+                          var ad = document.createElement("img");
+                          ad.src="image/film_img/matrix_logo.jpg";
+                          ad.style.width="300px";
+                          ad.style.height="400px";
+                          s2.appendChild(ad);
+                    }else if(k == 'd'){
+                           s2.removeChild(s2.childNodes[0]);
+
+                    }else if(alt){
+                            alert("You click alt button");
+
+                    }else if(ctrl){
+                            alert("You click ctrl button");
+
+                    }else if(shift){
+                            alert("You click shift button");
+
+                    }else if(String.fromCharCode(k2) == 'S'){
+
+                     var ad2 = document.createElement("img");
+                          ad2.src="image/film_img/matrix_poster1.jpg";
+                          ad2.style.width="300px";
+                          ad2.style.height="400px";
+                          s2.appendChild(ad2);
+                    }else{
+                           if(s2.hasChildNodes()){
+                              s2.childNodes[0].parentNode.removeChild(s2.childNodes[0]);   
+                           };
+                    };
+                     
+             }
+
+           
+           </script>
+           
+            
+           
+          
+          </main> 
+
+           
