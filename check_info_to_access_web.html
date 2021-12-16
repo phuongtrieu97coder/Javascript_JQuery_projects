@@ -1,0 +1,21 @@
+
+            <div id="block1"></div>
+
+            <div id="content" style="display:none;">
+                   <img src="image/logo1.jpg" width="100%" height="400px">
+            </div>
+
+           <script>
+                 var b = document.querySelectorAll("#block1")[0];
+                  var p  = prompt("What's your name?");
+                  var p2 = prompt("How old are you?");
+                  if(p == "" || p == null || p2 == "" || p2 == null){
+                         var h = document.createElement("h1");
+                         h.innerHTML = "Sorry, you must input your name and age to see the content of this website!!!";
+                         b.appendChild(h);
+                  }else{
+                    alert( "Welcome,"+p+", you are "+p2+" years old, and you are qualified to access the content of this website!!!");
+              
+                         document.getElementById("content").style.display = "block";
+                  }
+           </script>
