@@ -2,6 +2,8 @@
 
 ![image](https://user-images.githubusercontent.com/82598726/181831477-61e5dc01-279c-4a06-b961-589c6d757d4e.png) ![image](https://user-images.githubusercontent.com/82598726/181831517-b7707a20-1524-41cd-ac9f-297c655f32ea.png)
 
+# JavaScript+JQuery Projects
+
 
 # 1. Purpose:
 
