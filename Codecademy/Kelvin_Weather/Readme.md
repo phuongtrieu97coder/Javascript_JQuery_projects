@@ -16,7 +16,18 @@
 ![Alt text](image-2.png)
 
 ![Alt text](image-3.png)
+
+<br>
+<br>
+
 # 2. Output:
+The temperature is 68 degrees Fahrenheit.
+
+> When we write const kelvin = 0, the output is -460 degrees Fahrenheit.
+
+The temperature is -460 degrees Fahrenheit.
+<br>
+<br>
 
 # 3. Prompts:
 ![Alt text](image-4.png)
@@ -84,3 +95,6 @@ const kelvin = 0;
 
 
 ![Alt text](image-19.png)
+
+
+
