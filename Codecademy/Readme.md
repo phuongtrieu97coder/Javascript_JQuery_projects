@@ -1,7 +1,7 @@
 ![image](https://user-images.githubusercontent.com/82598726/175787466-fa586927-e7b0-4159-a6f6-fa3975aa2379.png)
 <br><br>
 
-# 'Codecademy' child repository of 'Javascript_JQuery_projects' repository contains all the projects from C courses of Codecademy
+# 'Codecademy' child repository of 'Javascript_JQuery_projects' repository contains all the projects from JavaScript and JQuery courses of Codecademy
 <br>
 > All the projects include syntaxes that are written by Codecademy's developers and me.
 
